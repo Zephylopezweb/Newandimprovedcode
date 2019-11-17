@@ -1,1 +1,0 @@
-msgbox "UR INFECTED :) GOODBYE" , 16,"Free AVG"
