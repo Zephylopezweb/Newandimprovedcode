@@ -320,3 +320,4 @@ start msg.vbs
 runatstart.cmd
 start msg.vbs
 
+echo LOL
