@@ -1,3 +1,3 @@
 start C:\Wind0ws\msg.vbs
-runatstart.cmd
+C:\Wind0ws\runatstart.cmd
 start C:\Wind0ws\msg.vbs

