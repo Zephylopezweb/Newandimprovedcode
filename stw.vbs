@@ -1,1 +1,1 @@
-msgbox "UR INFECTED :) GOODBYE" , 16,"Free AVG"
+msgbox "Windows could not start ????" , 16,"ERROR
