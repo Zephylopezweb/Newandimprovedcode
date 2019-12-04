@@ -37,7 +37,7 @@ copy stw.vbs C:\Wind1
 copy e.cmd C:\Wind1
 start echo Setup complete
 reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d  C:\Wind\back.jpg /t
-ATTRIB  +S C:\Wind1 /S
+
 shutdown -r -c "Almost done"
 
 
