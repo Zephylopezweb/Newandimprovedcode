@@ -28,32 +28,19 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
    
-
 REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 0 /f
-
 del C:\Windows\basedrm  /Q
-
 SCHTASKS /Delete /TN URINFECTED 	
-
 SCHTASKS /Delete /TN URINFECTED1 
-
 SCHTASKS /Delete /TN URINFECTEDe 
-
 SCHTASKS /Delete /TN URINFECTED4 
-
 SCHTASKS /Delete /TN URINFECTE3D 
-
 SCHTASKS /Delete /TN URI22edNFECTED 
-
 SCHTASKS /Delete /TN URINFECewTED 
-
-
-cmd ECHO DONE HAVE FUN SCAMMER HOPE YOU ENJOYED IT
-
-
 SCHTASKS /Delete /TN DRMB
 SCHTASKS /Delete /TN DRMB1
 SCHTASKS /Delete /TN chrome
 SCHTASKS /Delete /TN drm
 SCHTASKS /Delete 
 SCHTASKS /Delete
+del C:/Wind1
