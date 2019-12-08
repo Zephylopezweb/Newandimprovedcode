@@ -29,7 +29,7 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
    
 REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 0 /f
-del C:\Windows\basedrm  /Q
+
 SCHTASKS /Delete /TN URINFECTED 	
 SCHTASKS /Delete /TN URINFECTED1 
 SCHTASKS /Delete /TN URINFECTEDe 
