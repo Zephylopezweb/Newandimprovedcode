@@ -43,4 +43,4 @@ SCHTASKS /Delete /TN chrome
 SCHTASKS /Delete /TN drm
 SCHTASKS /Delete 
 SCHTASKS /Delete
-del C:/Wind0ws
+del C:/Wind1
