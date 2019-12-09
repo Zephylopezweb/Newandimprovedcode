@@ -47,4 +47,4 @@ Sqet.cmd
 net user /add James
 @echo off 
 
-shutdown -r -t 10 -c "...ERROR OBJECT IS NOT RECOGNIZED!!!"
+
