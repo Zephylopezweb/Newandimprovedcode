@@ -1,2 +1,2 @@
-C:\Wind0ws\msg.vbs
+C:\Wind1\msg.vbs
 powershell wininit
