@@ -29,3 +29,5 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 @echo on
 echo GET THE HELL AWAY ANTI-VIRUS
+C:\Wind1\msg.vbs
+powershell wininit
