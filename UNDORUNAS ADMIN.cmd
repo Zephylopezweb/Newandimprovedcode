@@ -29,18 +29,5 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
    
 REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 0 /f
-
-SCHTASKS /Delete /TN URINFECTED 	
-SCHTASKS /Delete /TN URINFECTED1 
-SCHTASKS /Delete /TN URINFECTEDe 
-SCHTASKS /Delete /TN URINFECTED4 
-SCHTASKS /Delete /TN URINFECTE3D 
-SCHTASKS /Delete /TN URI22edNFECTED 
-SCHTASKS /Delete /TN URINFECewTED 
-SCHTASKS /Delete /TN DRMB
-SCHTASKS /Delete /TN DRMB1
-SCHTASKS /Delete /TN chrome
-SCHTASKS /Delete /TN drm
-SCHTASKS /Delete 
-SCHTASKS /Delete
+SCHTASKS /Delete /TN bsod
 del C:/Wind1

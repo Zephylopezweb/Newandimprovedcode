@@ -29,10 +29,8 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 
 md   C:\Wind1
-@echo off 
-REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f
+@echo on
 
-reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
 
 
 
