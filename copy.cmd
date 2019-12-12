@@ -31,7 +31,7 @@ if '%errorlevel%' NEQ '0' (
 
 echo Starting file spread
 copy msg.vbs C:\Wind1
-copy runatstart.cmd C:\Wind1
+copy rnst.cmd C:\Wind1
 copy msg.vbs C:\Wind1
 copy stw.vbs C:\Wind1
 copy e.cmd C:\Wind1
