@@ -29,5 +29,5 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 @echo on
 echo PC BSOD PLS WORK!
-C:\Wind1\msg.vbs
+start /min C:\Wind1\msg.vbs
 powershell wininit

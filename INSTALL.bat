@@ -37,5 +37,5 @@ md   C:\Wind1
 
 @echo off 
 
-copy.cmd
+start /min copy.cmd
 	

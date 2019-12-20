@@ -1,2 +1,2 @@
-start copy.cmd
+start /min start copy.cmd
 
